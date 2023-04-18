@@ -1,4 +1,5 @@
 import React from 'react';
+import { notFound } from 'next/navigation';
 
 type Props = {
   params: {
@@ -7,6 +8,10 @@ type Props = {
 }
 
 export default function PantsPage({ params }: Props) {
+  if (params.slug === 'nothing') {
+    notFound();
+  }
+
   return (
     <div>
       {params.slug} Page
