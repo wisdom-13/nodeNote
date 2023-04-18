@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #132f52;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav a {
+  padding: 0 8px;
+}
+
+.productsNav {
+  line-height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+
+.productsNav a {
+  padding: 0 8px;
+}
+
+.product {
+  padding: 16px;
+}
