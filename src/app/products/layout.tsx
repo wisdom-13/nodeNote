@@ -1,6 +1,11 @@
 import styles from '../layout.module.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: '제품 사이트 | 전체',
+  description: '멋진 제품을 판매하는 곳',
+}
+
 export default function ProductsLayout({
   children,
 }: {
