@@ -6,6 +6,7 @@ import styles from './page.module.css';
 // export const revalidate = 3;
 
 export default async function ProductsPage() {
+
   const products = await getProducts();
   const res = await fetch('https://meowfacts.herokuapp.com', {
     next: { revalidate: 3 } // 3 > ISR, 0 > SSR
