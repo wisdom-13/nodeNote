@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getProduct, getProducts } from '@/service/products';
 
@@ -27,6 +28,7 @@ export default async function ProductPage({ params: { slug } }: Props) {
   return (
     <div>
       {product.name} Page
+      <Image src={`/images/${product.image}`} alt={product.name} width={300} height={300} priority />
     </div>
   );
 }

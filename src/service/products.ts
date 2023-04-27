@@ -2,9 +2,10 @@ import path from 'path';
 import { promises as fs } from 'fs';
 
 export type Product = {
-  id: string,
-  name: string,
-  price: number,
+  id: string;
+  name: string;
+  price: number;
+  image: string;
 }
 
 export async function getProducts(): Promise<Product[]> {
